@@ -1,0 +1,204 @@
+# Site settings
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "SixtyFourDI"
+theme = "forty"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+# Enter your disqus shortname to enable comments
+disqusShortname = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source)
+  # To create multi-line text in strings use the """example Text""" format
+  #
+  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # Provide your metadata here.
+  name = "Your name"
+  description = "Your description"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Just a custom image variable, please define it in .md files for content.
+  image = ""
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation Section
+  [params.navigation]
+    title = "Sixty"
+    subtitle = "Four Data Intelligence LLP"
+    menu = "Menu"
+    # Optional logo as brand stored in img/
+    # logo = "logo.png"
+
+    [[params.navigation.links]]
+      name = "Home"
+      url = "#"
+
+    [[params.navigation.links]]
+      name = "Blogs"
+      url = "blogs"
+
+  
+    [[params.navigation.links]]
+      name = "About us"
+      url = "aboutUs.html"
+
+    # Add custom links here by uncommenting code below. To remove links just delete
+    # the [[params.navigation.links]] map associated with that link. Copy and paste
+    # code below if you need more links. Buttons work in the same way.
+    # [[params.navigation.links]]
+    #    name = "NameOfLink"
+    #    url = "UrlOfLink"
+
+    # Button Style 1
+    [[params.navigation.button1]]
+      name = "Get Started"
+      url = "blogs"
+
+    # Button Style 2
+    [[params.navigation.button2]]
+      name = "Log In"
+      url = "#"
+
+  
+  # Banner section
+  [params.banner]
+    # To change the background image on the homepage banner, replace 'banner.jpg' in
+    # the 'static/img' folder.
+    title = "Data, Analytics, Insights"
+    subtitle = "User friendly cost effective data products and solutions for modern day business Decisions."
+    buttonText = "Explore our Solutions"
+
+
+  # Tiles Section
+  [params.tiles]
+    enable = true
+    # Display your showcases here.
+    
+    [[params.tiles.showcase]]
+      title = "IndiaDataHub"
+      subtitle = "India's Largest Interactive Public Data Platform"
+      image = "pic01.jpg"
+      url = "https://indiadatahub.com/" 
+
+    [[params.tiles.showcase]]
+      title = "TheDataBook"
+      subtitle = "Concise reference book for India. With Data and Charts (Coming Soon)"
+      image = "pic02.jpg"
+      url = "#"
+
+    [[params.tiles.showcase]]
+      title = "InsightAutomate"
+      subtitle = "Automate generation and dissemination of Insights from your data"
+      image = "pic03.jpg"
+      url = "http://localhost:1313/#contact"
+
+    [[params.tiles.showcase]]
+      title = "EasyComply"
+      subtitle = "Manage regulatory compliance and reporting with easy access to critical data"
+      image = "pic04.jpg"
+      url = "http://localhost:1313/#contact"
+      
+  
+  [params.blog]
+    # All blogs defined in their own files. You can find example blogs
+    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    # To add more blogs just copy and paste the code.
+
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "About Us"
+    subtitle = """Our team has collective experience of over 20 years in the area of data analytics and technology. 
+    We are industry experts in economic research and financial technology bringing together the unique blend of skill sets and background 
+    to meet the need of analytics tools for businesses."""
+    buttonText = "Know more"
+    url = "aboutUs.html"
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    buttonSend = "Send message"
+    buttonClear = "Clear"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below and uncomment
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    formEmail = "support@sixtyfourdi.com"
+
+    # Contact Section
+    # You can add multiple emails, phone numbers, or addresses
+    # by copying the corresponding map with frontmatter code.
+    [[params.contact.email]]
+    title = "Email"
+    email = "support@sixtyfourdi.com"
+
+    [[params.contact.phone]]
+    title = "Phone"
+    phone = "(000) 000-0000 x1234"
+
+    [[params.contact.address]]
+    title = "Address"
+    street = "WeWork, Zenia Building, Hiranandani Estate"
+    city = "Thane, MH 400607"
+    country = "India"
+
+  # Footer section
+    [params.footer]
+    enable = true
+    copyright = "Sixty Four Data Intelligence LLP"
+
+    # Uses font awesome icons
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      url= "https://www.twitter.com/IndiaDataHub"
+      label = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      url= "https://www.facebook.com"
+      label = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      url= "https://www.instagram.com"
+      label = "Instagram"
+    
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://www.github.com"
+      label = "GitHub"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      url= "https://www.linkedin.com/company/indiadatahub"
+      label = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "Design: "
+      url= "https://www.html5up.net"
+      alt = "HTML5 UP"
